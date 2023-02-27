@@ -1,7 +1,10 @@
 .padding {
-    padding: 3rem !important;
+    padding: 0rem !important;
 }
 
+.card{
+    width: 18rem;
+}
 .card-img-top{
     height:90.00px;
 
@@ -28,8 +31,8 @@
 }
 
 .little-profile .pro-img img {
-    width: 60%;
-    height: 60%;
+    width: 40%;
+    height: 40%;
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 100%
@@ -42,4 +45,16 @@ html body .m-b-0 {
 h3 {
     line-height: 30px;
     font-size: 21px
+}
+
+label{
+    color: white;
+    font-family: Montserrat;
+    font-weight: lighter;
+}
+
+#text-r{
+    color: white;
+    font-family: Montserrat;
+    font-weight: lighter;
 }
