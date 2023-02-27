@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrate</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/checkboxes.css">
 
     <link rel="stylesheet" href="css/loginstyle.css">
+    <link rel="stylesheet" href="css/registerstyle.css">
+
 </head>
 <body id="backColor">
   <div>
@@ -22,23 +25,80 @@
         <div class="row justify-content-center">
           <div class="col-md-6 col-lg-4">
             <div class="login-wrap py-5">
-            <div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/logo4.png);"></div>
-            <h3 class="text-center mb-0">Inicia sesión</h3>
+            <h3 class="text-center mb-0">Crea tu cuenta</h3>
             <p class="text-center">Introduce tus datos abajo</p>
-              <form action="#" class="login-form">
-              <div class="form-group">
-                <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-user"></span></div>
+            <form action="#" class="login-form">
+
+            <div class="form-group" name="profile-pic">
+
+              <div class="padding">
+                <div class="justify-content-center">
+                    <!-- Column -->
+                    <div class="card"> <img class="card-img-top" src="images/covertemplate.jpg" alt="Card image cap">
+                        <div class="card-body little-profile text-center">
+                            <div class="pro-img" id="pfp" ><img class="img-thumbnail" width="40%" src="images/pfp.jpg" alt="user"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+          <div class="form-group">
+                  <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-lock"></span></div>
+                  <input type="text" class="form-control" placeholder="Nombre" required>
+          </div>
+          <div class="form-group">
+            <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-user"></span></div>
+            <input type="email" class="form-control" placeholder="Email" required>
+          </div>
+          
+          <div class="form-group">
+                <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-mail-forward"></span></div>
                 <input type="text" class="form-control" placeholder="Username" required>
-              </div>
+          </div>
+
           <div class="form-group">
             <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-lock"></span></div>
-            <input type="password" class="form-control" placeholder="Password" required>
+            <input type="password" class="form-control" placeholder="Contraseña" required>
           </div>
-          <div class="form-group d-md-flex">
-                  <div class="w-100 text-md-right">
-                    <a href="#">¿Olvidó la contraseña?</a>
-                  </div>
+
+          <div class="form-group">
+            <textarea class="form-control" name="" placeholder="Descripción" id="" cols="30" rows="10"></textarea>
           </div>
+          
+			  <!-- Grupo: Género -->
+          <div class="form-group" id="grupo__genero">
+            <label for="genero" class="formulario__label">Genero</label>
+            <div class="input-block">
+                                        <label class="rad-label">
+                                            <input type="radio" class="rad-input gender" onclick="validarGenero()" name="rad" id="Hombre" value="Hombre">
+                                            <div class="rad-design rad-man"></div>
+                                            <div class="rad-text">Hombre</div>
+                                        </label>
+                                        <label class="rad-label">
+                                            <input type="radio" class="rad-input rad-woman gender" onclick="validarGenero()" name="rad" id="Mujer" value="Mujer">
+                                            <div class="rad-design rad-woman"></div>
+                                            <div class="rad-text">Mujer</div>
+                                        </label>
+                                        <label class="rad-label">
+                                            <input type="radio" class="rad-input rad-woman gender" onclick="validarGenero()" name="rad" id="Otro" value="Otro">
+                                            <div class="rad-design rad-other"></div>
+                                            <div class="rad-text">Otro</div>
+                                        </label>
+                    </div>
+          </div>
+
+          <div class="form-group" id="grupo__fecha">
+              <label for="birthDate" class="formulario__label">Fecha Nacimiento:</label>
+              <div class="formulario__grupo-input">
+                <input type="date" name="FechaNacimiento" id="FechaNacimiento"><br>
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+              </div>
+            <p class="formulario__input-error">Selecciona una fecha correcta</p>
+          </div>
+
+
           <div class="form-group">
             <button type="submit" class="btn form-control btn-primary rounded submit px-3">INICIA SESIÓN</button>
           </div>
@@ -55,11 +115,17 @@
 
   </div>
 
+<script type="text/javascript" src="//use.typekit.net/psm0wvc.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 
+
+
+<script src="js/sweetalert2.all.min.js"></script>
+<script src="js/fotoperfil.js"></script>
 </body>
 </html>
