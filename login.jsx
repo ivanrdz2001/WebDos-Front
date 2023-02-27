@@ -26,7 +26,7 @@
 					<div class="row justify-content-center">
 						<div class="col-md-6 col-lg-4">
 							<div class="login-wrap py-5">
-						  <div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/logo4.png);"></div>
+						  <div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/bg.jpg);"></div>
 						  <h3 class="text-center mb-0">Inicia sesión</h3>
 						  <p class="text-center">Introduce tus datos abajo</p>
 								<form action="#" class="login-form">

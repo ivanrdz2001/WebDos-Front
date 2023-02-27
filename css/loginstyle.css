@@ -1370,7 +1370,7 @@ pre {
 
 .table-hover tbody tr:hover {
   color: #212529;
-  background-color: rgba(0, 0, 0, 0.075); }
+  background-color: rgba(202, 94, 94, 0.075); }
 
 .table-primary,
 .table-primary > th,
@@ -4686,7 +4686,7 @@ a.close.disabled {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
 
 .toast-body {
-  padding: 0.75rem; }
+  padding: 0.85rem; }
 
 .modal-open {
   overflow: hidden; }
@@ -8106,7 +8106,7 @@ a.text-dark:hover, a.text-dark:focus {
   @page {
     size: a3; }
   body {
-    min-width: 992px !important; }
+    min-width: 1222px !important; }
   .container {
     min-width: 992px !important; }
   .navbar {
